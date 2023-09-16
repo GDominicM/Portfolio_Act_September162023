@@ -23,3 +23,6 @@ def profile(request):
 
 def contact(request):
     return render(request, 'contact_form.html', {})
+
+
+

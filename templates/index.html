@@ -1,18 +1,10 @@
+{% extends 'base.html'  %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-{% load static %}
-<head>
-    <title>Portfolio</title>
-    <meta name=" viewport" content="width=device-width,
-    initial-scale=1, maximum-scale=1, minimum-scale=1"/>
 
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+{% block content %}
 
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="{% static '/css/default.css' %}">
-
-</head>
 <body>
     <section class="s1">
         <div class = "main-container">
@@ -21,7 +13,7 @@
            </div>
 
             <div class="intro_wrapper">
-                {% include 'navbar.html' %}
+
 
     <div class="left-column">
         <img id="profile_pic" src="{% static '/image/Profile.jpg' %}" alt="Profile Picture">
@@ -70,13 +62,8 @@
         </div>
     </section>
 
-<section class="s2">
-        <div class = "main-container">
-            <h4>Contact</h4>
-            <a href="{% url 'contact' %}">Contact Me</a>
+{% endblock %}
 
-        </div>
-    </section>
 
-</body>
-</html>
+
+```

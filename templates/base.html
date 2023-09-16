@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio</title>
+    <meta name=" viewport" content="width=device-width,
+    initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{% static '/css/default.css' %}">
+
+</head>
+{% block content %}
+
+{% endblock %}
+<section class="s2">
+        <div class = "main-container">
+            <h4>Contact</h4>
+            <a href="{% url 'contact' %}">Contact Me</a>
+
+        </div>
+    </section>
+
+</body>
+</html>
