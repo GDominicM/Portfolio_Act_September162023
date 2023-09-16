@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static '/css/default.css' %}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+</head>
+<body>
+    <form id ="contact-form">
+        <label>Name</label>
+        <input class = "input-field" type="text" name="name">
+
+        <label>Subject</label>
+        <input class = "input-field" type="text" name="subject">
+
+         <label>Email</label>
+        <input class = "input-field" type="text" name="email">
+
+         <label>Message</label>
+        <input class = "input-field" type="text" name="name">
+
+        <input id = "submit-btn" input type="submit" value="Send">
+    </form>
+</body>
+</html>
